@@ -163,13 +163,27 @@
 			<ul class="icons">
 				<li><a href="uk.linkedin.com/pub/niraj-vyas/71/361/998/" class="fa fa-linkedin solo"><span>LinkedIn</span></a></li>
 			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>Niraj Vyas | Web developer | Graphic Designer | Animator</li>
-				</ul>
-			</div>
-		</section>
-		<div class="code">
+
+
+
+<div class="accordion">
+        <!-- span to target fix closing accordion -->
+        <span class="target-fix" id="accordion"></span>
+         
+        <!-- First Accoridon Option -->
+        <div>
+            <!-- span to target fix accordion -->
+            <span class="target-fix" id="accordion1"></span>
+            
+            <!-- Link to open accordion, hidden when open --> 
+            <a href="#accordion1" id="open-accordion1" title="open">View CV in code</a>
+            
+            <!-- Link to close accordion, hidden when closed -->
+            <a href="#accordion" id="close-accordion1" title="close">Close</a> 
+            
+            <!-- Accorion content goes in this div -->
+            <div class="accordion-content">
+                <p>	<div class="code">
 				<pre class="prettyprint lang-ruby">
 class Niraj < WebDeveloper::Base
   acts_as_developer
@@ -233,7 +247,20 @@ class Niraj < WebDeveloper::Base
   end
 end
 			</pre>
-		</div>
+		</div></p>
+            </div>
+        </div>
 
+
+
+			
+			<div class="copyright">
+				<ul class="menu">
+					<li>Niraj Vyas | Web developer | Graphic Designer | Animator</li>
+				</ul>
+			</div>
+		</section>
+	
+     
 	</body>
 </html>
